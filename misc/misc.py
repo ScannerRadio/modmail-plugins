@@ -22,7 +22,7 @@ import discord, asyncio, random, textwrap, traceback, inspect2
 
 from discord.ext import commands
 
-dev_list = [323578534763298816]
+dev_list = [542058542853521461]
 
 
 class Misc(commands.Cog):
@@ -70,7 +70,7 @@ class Misc(commands.Cog):
         else:    emb = await self.format_mod_embed(ctx, userid, success, 'hackban')
         try:    return await ctx.send(embed=emb)
         except discord.HTTPException as e:
-            if ctx.author.id == 323578534763298816:    return await ctx.error(f'​`​`​`py\n{e}​`​`​`')
+            if ctx.author.id == 542058542853521461:    return await ctx.error(f'​`​`​`py\n{e}​`​`​`')
             else:    pass
 
     # +------------------------------------------------------------+
